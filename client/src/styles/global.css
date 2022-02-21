@@ -1,0 +1,240 @@
+@font-face {
+  font-family: "Product Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2)
+    format("woff2");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+body {
+  font-family: Product Sans;
+  background: var(--bg-color);
+  color: #fff;
+}
+
+th,
+td {
+  color: #fff;
+}
+
+:root {
+  --primary-color: #cd2e71;
+  --white-color: #e8e8e8;
+  --bg-color: #000;
+}
+
+.primary-color {
+  color: var(--primary-color);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.btn-primary,
+.btn-primary:active,
+.btn-primary:focus {
+  background-color: var(--primary-color);
+}
+
+.container-list-film {
+  width: 70%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.highlight-film {
+  width: 1081px;
+  height: 437px;
+  padding: 40px 80px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.btn-add-film {
+  width: 230px;
+  height: 40px;
+}
+
+.card-profile {
+  background: #5a1432;
+}
+
+.navbar {
+  padding: 0.5rem 100px;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg-color);
+  height: 80px;
+}
+
+.icon {
+  height: 44.27px;
+  width: 159px;
+}
+
+.btn {
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.btn.btn-login {
+  background-color: transparent;
+  border: none;
+  color: var(--white-color);
+  width: 100px;
+  height: 40px;
+  font-weight: 800;
+  margin-right: 1rem;
+}
+
+.btn-login:hover {
+  border: 1px solid var(--white-color);
+}
+
+.btn.btn-register {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  width: 100px;
+  height: 40px;
+  font-weight: 900;
+}
+
+.container-modal {
+  padding: 33px;
+}
+
+.title-modal {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  margin-bottom: 34px;
+}
+
+.footer-modal {
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-modal,
+.btn-modal:hover,
+.btn-modal:active {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  margin-top: 30px;
+  color: #fff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.dropdown-menu {
+  background-color: var(--bg-color);
+}
+
+.dropdown-item,
+.dropdown-item b {
+  color: var(--white-color);
+}
+
+.dropdown-item:hover b {
+  color: var(--bg-color);
+}
+
+#overlay {
+  /* position: fixed; */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* z-index: 9999; */
+  /* background: #000; */
+  pointer-events: none;
+  /* opacity: 0.8; */
+  color: #fff;
+}
+
+.overlay {
+  position: absolute;
+  width: 640px;
+  height: 360px;
+  /* top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; */
+  /* z-index: 99999; */
+  background: #000;
+  opacity: 0;
+  /* color: #fff; */
+}
+
+.toast-buy-film {
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #469f74;
+  font-size: 18px;
+  width: 100%;
+}
+
+.modal-content {
+  background: var(--bg-color);
+}
+
+.title-modal {
+  color: var(--primary-color);
+}
+
+.btn.btn-attachment,
+.btn.btn-attachment:hover,
+.btn.btn-attachment:active {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  width: 159px;
+  height: 45px;
+}
+
+.alert-container {
+  padding: 3px 39px;
+  background: rgba(0, 255, 133, 0.1);
+  border-radius: 2px;
+  margin: 0;
+}
+
+.alert-text {
+  color: #00ff47;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 14px;
+  opacity: 1;
+  margin: 0;
+}
+
+.form-input {
+  background: rgba(210, 210, 210, 0.25);
+  border: 2px solid #bcbcbc;
+  box-sizing: border-box;
+  border-radius: 5px;
+}

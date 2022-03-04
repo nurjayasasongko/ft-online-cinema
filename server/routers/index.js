@@ -9,12 +9,11 @@ const uploadImage = require('../middlewares/uploadImage')
 
 const router = express.Router()
 
+//auth
 router.post('/register', register)
 router.post('/login', login)
-router.get('/users', getUser)
-router.delete('/user/:id', deleteUser)
 
-// film
+// films
 router.post('/film', auth, isAdmin, uploadImage, createFilm)
 router.get('/film/:id', auth, getFilmById)
 router.get('/film', getAllFilms)
@@ -24,8 +23,14 @@ router.delete('/film/:id', auth, isAdmin, deleteFilm)
 
 // categories
 router.get('/category', getCategories)
+
+// profiles
+router.get('/users', getUser)
+router.delete('/user/:id', deleteUser)
 router.get('/profile', auth, getProfile)
 router.patch('/profile', auth, uploadImage, editProfile)
+
+// transactions
 router.get('/transactions', auth, isAdmin, getTransactions)
 router.patch('/transaction/:id', auth, isAdmin, updateStatusTransaction)
 router.get('/my-films', auth, getMyFilm)
